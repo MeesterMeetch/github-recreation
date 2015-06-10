@@ -3,23 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <title>Mitch GitHub</title>
+  <link rel="stylesheet" href="/octicons/octicons.css">
   <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 
   <div class="wrapper">
-    <header>
-      <div class="container clear-fix">
+    <header class="container-fluid clearfix">
+      <div class="container clearfix">
         <a class="header-logo" href="https://github.com/">
           <span class="mega-octicon octicon-mark-github"></span>
-        </div>
+        </a>
+
+        <div class="site-search">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search GitHub">
+            </div>
+          </form>
+      </div>
+
+      <ul class="nav navbar-header">
+        <li class="nav-tabs">
+          <a href="#" class="header">
+            Pull requests
+          </a>
+        </li>
+
+        <li class="nav-tabs">
+          <a href="#" class="header">
+            Issues
+          </a>
+        </li>
+
+        <li class="nav-tabs">
+          <a href="#" class="header">
+            Gist
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <span class="octicon octicon-plus"></span>
+            <span class="caret">
+          </span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><span class="octicon octicon-repo"></span>New Repository</a></li>
+            <li><a href="#"><span class="octicon octicon-organization"></span>New Organization</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <img alt="@MeesterMeetch" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/5578957?v=3&amp;s=40" width="20">
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><span class="octicon octicon-person"></span>View profile</a></li>
+            <li><a href="#"><span class="octicon octicon-star"></span>Starred repositories</a></li>
+            <li><a href="#"><span class="octicon octicon-telescope"></span>Explore</a></li>
+            <li><a href="#"><span class="octicon octicon-question"></span>Help</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><span class="octicon octicon-gear"></span>Settings</a></li>
+            <li><a href="#"><span class="octicon octicon-sign-out"></span>Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
 
       </div>
+
+
+
     </header>
 
       <!-- main content -->
-    <div class="site clear-fix">
+    <div class="site clearfix">
 
       <div id="site-container"class="context-loader-container">
 
@@ -29,7 +91,7 @@
 
             <div class="col-md-3 vcard">
 
-              <a href="/account" aria-label="Change your avatar" class="vcard-avatar tooltipped tooltipped-s"><img alt="" class="avatar" height="230" src="https://avatars0.githubusercontent.com/u/5578957?v=3&amp;s=460" width="230"></a>
+              <a href="/account" class="vcard-avatar tooltipped tooltipped-s"><img alt="" class="avatar" height="230" src="https://avatars0.githubusercontent.com/u/5578957?v=3&amp;s=460" width="230"></a>
                 <h1 class="vcard-names">
                   <span class="vcard-fullname" itemprop="name">Mitchell Hunt</span>
                   <span class="vcard-username" itemprop="additionalName">MeesterMeetch</span>
@@ -54,7 +116,7 @@
                       </div>
                         <div class="clearfix">
                           <h3>Organizations</h3>
-                              <a href="/TIY-Charleston-Front-End-May2015" aria-label="TIY-Charleston-Front-End-May2015" class="tooltipped tooltipped-n avatar-group-item" itemprop="follows"><img alt="@TIY-Charleston-Front-End-May2015" class="avatar" height="42" src="https://avatars0.githubusercontent.com/u/12236563?v=3&amp;s=84" width="42"></a>
+                              <a href="/TIY-Charleston-Front-End-May2015" class="tooltipped tooltipped-n avatar-group-item" itemprop="follows"><img alt="@TIY-Charleston-Front-End-May2015" class="avatar" height="42" src="https://avatars0.githubusercontent.com/u/12236563?v=3&amp;s=84" width="42"></a>
                         </div>
                     </div>
 
@@ -108,13 +170,13 @@
 
             </div>  <!-- col-md-9 -->
 
-          </div>
+          </div>  <!-- container -->
 
-        </div>
+        </div> <!-- site container -->
 
-      </div> <!-- site-container -->
+      </div> <!-- site clearfix -->
 
-    </div> <!-- site clear-fix -->
+    </div> <!-- wrapper -->
 
 
     <div class="container"> <!-- footer -->

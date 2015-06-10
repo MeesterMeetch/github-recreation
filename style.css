@@ -1,11 +1,64 @@
+/*# sourceMappingURL=style.css.map */
+
 *{
   box-sizing: border-box;
 }
 
+body {
+  word-wrap: break-word;
+  font: 13px/1.4 Helvetica, arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
+}
 
-a .header-logo{
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 1000px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+  list-style: none;
+}
+
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-logo {
+float: left;
+margin-right: 10px;
+margin-left: -2px;
+color: #333;
+white-space: nowrap;
+}
+
+header .octicon-mark-github {
   float: left;
   width: 28px;
   height: 28px;
   font-size: 28px;
+}
+
+.site-search{
+  position: relative;
+  float: left;
+}
+
+.form-control{
+  height: 22px;
+}
+
+.navbar-header{
+  float: left;
+  list-style: none;
+}
+
+.nav-tabs {
+  float: left;
+  border-bottom: none;
+}
+
+.dropdown-menu {
+  z-index: 100;
 }
