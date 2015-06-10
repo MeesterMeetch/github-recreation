@@ -100,7 +100,7 @@
                   <li class="vcard-detail" itemprop="homeLocation" title="United States"><span class="octicon octicon-location"></span>United States</li>
                   <li class="vcard-detail"><span class="octicon octicon-clock"></span><span class="join-label">Joined on </span><time class="join-date" datetime="2013-09-30T18:28:25Z" day="numeric" is="local-time" month="short" year="numeric" title="Sep 30, 2013, 2:28 PM EDT">Sep 30, 2013</time></li>
                 </ul>
-                      <div class="vcard-stats">
+                      <div class="vcard-stats clearfix">
                         <a class="vcard-stat" href="/MeesterMeetch/followers">
                           <strong class="vcard-stat-count">0</strong>
                           <span class="text-muted">Followers</span>
@@ -124,28 +124,34 @@
 
             <div class="col-md-9">
 
-              <div class="tabnav">
+              <div class="nav">
                 <div class="right">
-                      <a href="/account" class="btn btn-sm">
+                      <a href="/account" class="btn-group btn-group-sm">
                         <span class="octicon octicon-pencil"></span>
                         Edit profile
                       </a>
                 </div>
 
-                <nav class="nav nav-tabs">
-                  <a href="/MeesterMeetch" class="tabnav-tab ">
+                <ul class="nav nav-tabs">
+                  <li>
+                  <a href="/MeesterMeetch" class="nav-tab ">
                     <span class="octicon octicon-diff-added"></span>
                     Contributions
                   </a>
-                  <a href="/MeesterMeetch?tab=repositories" class="tabnav-tab selected">
+                  </li>
+                  <li>
+                  <a href="/MeesterMeetch?tab=repositories" class="nav-tab selected">
                     <span class="octicon octicon-repo"></span>
                     Repositories
                   </a>
-                  <a href="/MeesterMeetch?tab=activity" class="tabnav-tab ">
+                 </li>
+                 <li>
+                  <a href="/MeesterMeetch?tab=activity" class="nav-tab ">
                     <span class="octicon octicon-rss"></span>
                     Public activity
                   </a>
-                </nav>
+                </li>
+                </ul>
               </div>  <!-- nav-tabs in content -->
 
               <div class="tab-content">
