@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.columns {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
 body {
   word-wrap: break-word;
   font: 13px/1.4 Helvetica, arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -61,4 +66,8 @@ header .octicon-mark-github {
 
 .dropdown-menu {
   z-index: 100;
+}
+
+#site-container > .container:first-child {
+  margin-top: 20px;
 }
